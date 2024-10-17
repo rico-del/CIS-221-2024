@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <form>
+            <label for="email">Enter Your Email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Enter Your Password</label>
+            <input type="password" name="password" id="password"/>
+            <br>
+            <label for="">Select Your Gender</label><br>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Prefer Not to Say <br>
+            <label for="country">Select your Country</label>
+            <select name="country" id="country">
+                <option value="Kenya">Kenya</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="USA">USA</option>
+            </select><br>
+            <label for="eye-color">Select the color of your Eyes</label>
+            <select name="colors" id="colors" multiple>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="grey">Grey</option>
+                <option value="blue">Blue</option>
+            </select><br>
+            <input type="reset" value="Reset Form"/><br>
+            <input type="submit" value="Submit"/><br>
+            <label for="search">Search</label>
+            <input type="search" value="search" placeholder="Search here"/><br>
+            <label for="website">Enter Your Website</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+            <input type="button" value="LOGIN"/>
+        </form>
+    </div>
+    <style>
+        .login{
+            border: 3px solid yellow;
+            max-width: max-content;
+            padding: 20px 30px;
+            margin: 10px auto;
+        }
+        input{
+            display: block;
+            background-color: blanchedalmond;
+            margin: auto;
+        }
+    </style>
+</body>
+</html>
