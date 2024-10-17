@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+    </head>
+    <body>
+     <form name="login" method="post" action="login.php"></form>
+     <h1>LOGIN FORM</h1>
+     Name: <input type="text" name="username" value="Enter your Name"/><br>
+     Password: <input type="password" name="password" value=""/><br>
+     <button class="submit-button" type="submit" name="submit" value="">💨LOGIN</button>
+     <button class="reset-button" type="reset" name="reset" value="">CANCEL</button><br>
+     <a href="reset.html">Forgot Your Password?</a>
+    </body>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: brown;
+        }
+       .submit-button {
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: cyan;
+            border-radius: 60px;
+            padding: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+       .submit-button:hover{
+            background-color: blueviolet;
+        }
+        .reset-button {
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: cyan;
+            border-radius: 60px;
+            padding: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+       .reset-button:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</html>
