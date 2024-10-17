@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Entry Form</title>
+</head>
+<body>
+    <h1>"Pimp My Shoe" Contest Entry Form</h1>
+    <p>
+        Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have got to go and you may be one <br>
+        of ten lucky winners. <br>
+    </p>
+        Contest Entry Information
+    <br>
+    <form>
+        <p>
+            <label for="name">Name:</label>
+        <input type="name" name="name" id="name">
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email"/>
+        <br>
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <label for="reasons">My shoes are SO old...</label><br>
+        <textarea name="reasons" id="reasons" rows="3" columns="150" maxlength="300" placeholder="No more than 300 Characters"></textarea>
+        </p>
+        <h2>Design your custom Forcefields:</h2>
+        <fieldset>
+            <legend>Custom Shoe Design</legend>
+            <fieldset>
+                <legend>Color <i>(choose one):</i></legend>
+                <input type="radio" name="option" />Red <br>
+                <input type="radio" name="option" />Blue <br>
+                <input type="radio" name="option" />Black <br>
+                <input type="radio" name="option" />Silver <br>
+            </fieldset>
+            <fieldset>
+                <legend>Features<i>(Choose as many as you want)</i></legend>
+                <input type="checkbox" name="desc" value="Sparkly laces" >Sparkly laces <br>
+                <input type="checkbox" name="desc" value="Metallic logo" checked>Metallic logo <br>
+                <input type="checkbox" name="desc" value="Light-up heels" >Light-up heels <br>
+                <input type="checkbox" name="desc" value="MP3-enabled">MP3-enabled <br>
+            </fieldset>
+            <fieldset>
+                <legend>Size</legend>
+                Sizes reflect standard men's sizes:
+                <label for="men shoes">
+                    <input type="number" name="men shoes" min="1" max="10">
+                </label>
+            </fieldset>
+        </fieldset>
+        <input type="submit" value="Pimp My Shoes!"/>
+        <input type="reset" value="Reset"/>
+    </form>
+    <style>
+        p{
+            margin-left: 20px;
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>
