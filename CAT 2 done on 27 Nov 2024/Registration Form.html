@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 50%;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            width: 25%;
+            text-align: left;
+            margin-right: 10px;
+
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 40%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group .error-message {
+            width: 30%;
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .form-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-buttons button.clear {
+            color: black;
+        }
+
+        .form-buttons button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Account</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+                <div class="error-message">User name must be at least 4 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <div class="error-message">Password must be at least 4 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+                <div class="error-message">Passwords do not match</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <div class="error-message">Invalid email format</div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <div class="error-message">Invalid phone number</div>
+            </div>
+
+            <div class="form-group">
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip">
+                <div class="error-message">Invalid Zip Code</div>
+            </div>
+
+            <div class="form-group">
+                <label for="card-type">Card Type:</label>
+                <select id="card-type" name="card-type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+                <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number">
+                <div class="error-message">Invalid card number format</div>
+            </div>
+
+            <div class="form-group">
+                <label for="expDate">Expiration Date:</label>
+                <input type="date" id="expDate" name="expDate">
+                <div class="error-message">Invalid date format</div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Register</button>
+                <button type="reset" class="clear">Clear Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

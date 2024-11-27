@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        text-align: center;
+        background-color: #B1A69B;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+    
+    h2{
+        text-align: left;
+        font-size: 28px;
+    }
+
+    h3{
+        text-align: right;
+        font-size: 34px;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 60%;
+    }
+    
+    button {
+        padding: 10px 15px;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .weather-info {
+        margin-top: 20px;
+    }
+
+    .hum{
+        color: purple;
+    }
+    
+    .forecast {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        color: purple;
+    }
+
+    .lit{
+        color: plum;
+        display: inline;
+    }
+    
+    .forecast div {
+        text-align: center;
+    }
+    
+    .paragraph{
+       text-align: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our Weather Application</h1>
+        <input type="text" placeholder="Enter city name">
+        <button>SEARCH</button>
+        <div class="weather-info">
+            <h3>☁ 12°C</h3>
+            <h2>Paris</h2>
+            <div class="paragraph">
+                <p>Tuesday 14:40, scattered clouds</p>
+            <p>Humidity: <span class="hum">66</span>, Wind Speed: 4.3</p>
+        </div>
+            <div class="forecast">
+                <div>Mon<br>⛅<br>15°<div class="lit">19°</div></div>
+                <div>Tue<br>⛅<br>15°<div class="lit">19°</div></div>
+                <div>Wed<br>⛅<br>15°<div class="lit">19°</div></div>
+                <div>Thu<br>⛅<br>15°<div class="lit">19°</div></div>
+                <div>Fri<br>⛅<br>15°<div class="lit">19°</div></div>
+                <div>Sat<br>⛅<br>15°<div class="lit">19°</div></div>
+                <div>Sun<br>⛅<br>15°<div class="lit">19°</div></div>
+            </div>
+            <div class="credits">
+                <p>Coded by Derick Omondi and is on <a href="https://github.com/rico-del">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
